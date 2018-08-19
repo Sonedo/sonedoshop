@@ -1,0 +1,26 @@
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+@import "~materialize-css/sass/materialize.scss";
+
+body {
+  background-color: cadetblue;
+}
+
+.slider-main {
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 40px;
+  }
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+  }
+  .slick-prev {
+    left: 10px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+}
