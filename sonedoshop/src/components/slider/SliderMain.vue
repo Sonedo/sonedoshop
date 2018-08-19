@@ -10,7 +10,10 @@
   export default {
     name: "SliderMain",
     mounted() {
-      global.$('.slider-main').slick()
+      global.$('.slider-main').slick({
+        autoplay: true,
+        autoplaySpeed: 7000
+      })
     }
   }
 
