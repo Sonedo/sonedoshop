@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    Hello World!
-    <p>
-      <router-link to="/">Go To Home</router-link>
-      <router-link to="/about">Go To About</router-link>
-    </p>
+    <AppHeader/>
     <router-view></router-view>
   </div>
 </template>
 <script>
+  import AppHeader from './components/header/AppHeader.vue'
   export default {
     beforeMount() {
       global.$ = require('jquery');
       global.slickCarousel = require('slick-carousel');
-      global.materializeCss = require('materialize-css')
+      global.materializeCss = require('materialize-css/')
+    },
+    components:{
+      AppHeader
     }
   };
 </script>
